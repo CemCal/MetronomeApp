@@ -15,13 +15,8 @@ namespace MetronomeApp
 
         public void FireTickEvent()
         {
-            for(int i = 0; i < 5; i++)
-            {
                 Tick();
-                System.Threading.Thread.Sleep(3000);
-            }
-            
-            
+      
         }
 
         

@@ -15,8 +15,11 @@ namespace MetronomeApp
 
             metronome.Tick += listener.Notificate;
 
-
-            metronome.FireTickEvent();
+            for(int i = 0; i < 5; i++)
+            {
+                System.Threading.Thread.Sleep(3000);
+                metronome.FireTickEvent();
+            }
         }
     }
 }
